@@ -1,0 +1,501 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Fauna One', serif;
+	font-size: 1.6em;
+	overflow-x: hidden;}
+
+li {
+	list-style: none;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 3%;
+}
+
+table:hover, th:hover, td:hover{
+	text-decoration: none;
+	color: inherit;
+} 
+
+a {
+	color: black;
+}
+
+a .about {
+	color: black;
+}
+
+a:hover, a:focus {
+	/*color: white;*/
+	text-decoration: none;
+}
+
+.repository .container:hover{
+	text-decoration:none;
+	color: black;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	margin-top: 4%;
+	font-size: 412.5%;
+}
+
+
+h1 > small {
+	display: block;
+	color: white;
+}
+
+h2 {
+	font-size: 245%;
+	margin-top: 7%;
+}
+
+h2:after {
+	display: block;
+	margin: 42px 0;
+	content: "";
+}
+
+
+h1 .name {
+	font-family: 'Brush Script MT', cursive;
+    /* width: 200px; */
+    margin-left: -20px;
+    color: #ffffff;
+    /* margin-top: -28%; */
+    /* padding-top: 42%; */
+    position: relative;
+}
+
+h2 #interests{
+	color:black;
+	text-decoration: none;
+}
+
+
+.link {
+	color: white;
+	display: block;
+	background-color: black;
+	padding: 18px;
+	border: 3px solid #55acee;
+}
+
+.vertical-list li {
+	float: left;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.overlay {
+	background-color: rgba(4, 14, 22, 0.68);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.container{
+	margin-top: 6%;
+	margin-left: 14%;
+	height: 100vh;
+}
+
+#home {
+	background: url("https://media4.popsugar-assets.com/files/thumbor/tpVYZ5WqRjR19vfHqruRGJBavF0/fit-in/2048xorig/filters:format_auto.!!.:strip_icc.!!./2016/06/15/942/n/1922507/049615419db8fdd5_POPSUGAR_03.27.15_ProductVignette_347_edit.jpg") no-repeat;
+	width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+#home nav {
+	margin: 0 auto;
+	width: 700px;
+	padding-top: 80px;
+	color: white;
+	margin-left: 31%;
+}
+
+#home nav ul {
+	overflow: hidden;
+	color: white;
+}
+
+#home nav ul li {
+	width: 25%;
+}
+
+#home nav a {
+	padding: 16px;
+	padding-right: 30px;
+	display: table-cell;
+	color: white;
+}
+
+#home nav.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: black;
+	z-index: 999;
+	padding: 0;
+	transition: background-color .8s;
+	
+}
+
+#home nav.fixed ul {
+    max-width: 700px;
+	margin: 0 auto;
+}
+
+
+.social-links {
+    overflow: hidden;
+    /* padding-top: 6%; */
+    display: table;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+.social-links li {
+	display: inline-table;
+	margin-right: 10px;
+	border-color: #55acee;
+}
+
+
+#about .info {
+	display: flex;
+	flex-direction: row;
+}
+
+#about h2 {
+	color: #0d2435;
+}
+
+h2::after {
+	border-bottom: 2px dashed #918D8D;
+}
+
+#about .info p {
+	line-height: 190%;
+}
+
+
+#skill-set {
+	padding-bottom: 10%;
+	float: left;
+}
+
+#skill-set ul {
+	overflow: hidden;
+}
+
+#web-development-skills {
+	background-color: #55acee;
+}
+
+.skills {
+	color: white;
+}
+
+.skills li {
+	padding: 20px;
+}
+
+#interests{
+	background-color: #55acee;
+	color: white;
+}
+
+#interests h2::after {
+	border-bottom: 2px dashed white;
+}
+#interests_list li{
+	list-style-type:disc;
+	font-size: 1.2em;
+	color:black;
+}
+
+
+#interests .row{
+	margin-right: 20%;
+	margin-left: 5%;
+}
+
+#interests .container{
+	padding-bottom: 5%;
+}
+
+#interests:hover{
+	text-decoration: none;
+	color: black;
+}
+
+
+#repository p, .tools {
+	width: 100%;
+}
+
+#repository div section {
+	cursor: pointer;
+}
+
+#repository div:nth-child(odd) section {
+	background-color: #483F3F;
+	padding: 10px;
+	border: 3px solid #4D4343;
+}
+
+#repository div:nth-child(even) section {
+	background-color: #3D3636;
+	padding: 10px;
+	border: 3px solid #393333;
+}
+
+#repository img {
+	width: 100%;
+}
+
+#repository section {
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+#repository .overlay {
+	position: relative;
+	padding-bottom: 0px;
+	min-height: 550px;
+  overflow: auto;
+}
+
+#repository .description h4 {
+	color: white;
+}
+
+#repository .heading {
+	position: relative;
+	margin: 0 auto;
+}
+
+#repository section {
+	width: 50%;
+	float: left;
+}
+
+#repository section:hover .overlay img {
+	opacity: 0;
+	transition: opacity .32s;
+}
+
+#repository section:hover .description {
+	top: 140px;
+	transition: top .5s;
+}
+
+#repository section:hover .overlay .heading span {
+	 -webkit-transform: rotate(180deg);
+	 position: relative;
+	 top: -80px;
+	 left: -30px;
+	 color: rgba(4,14,22,.83);;
+}
+
+
+#repository section:hover .overlay .description > * {
+	display: block;
+}
+
+#repository section:hover .overlay .heading {
+	position: absolute;
+	top: -60px;
+	transition: top .9s;
+}
+
+*/
+@media screen and (max-width: 1200px) {
+	#repository [class^="col"] section {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 10px;
+		min-height: 400px;
+	}
+
+	#repository .overlay {
+		width: 100%;
+		height: auto;
+	}
+
+	#repository img {
+		width: 100%;
+		height: auto;
+	}
+
+	#repository section:hover .overlay .heading span {
+	 -webkit-transform: rotate(90deg);
+	 top: 70px;
+	 left: -240px;
+	 position: relative;
+	}
+}
+
+@media screen and (max-width: 790px) {
+	body {
+		font-size: 18px;
+		text-align: center;
+	}
+  
+  h2 {
+    margin-top: 80px;
+  }
+
+	input {
+		text-align: center;
+	}
+
+	#about img {
+		display: block;
+		margin: 0 auto;
+		width: 30%;
+	}
+	
+	#about .info {
+		flex-direction: column-reverse;
+	}
+
+	#skill-set .skills {
+		margin-top: 20px;
+	}
+
+	form {
+		text-align: left;
+	}
+
+	#repository .description p {
+		margin-top: 40px;
+	}
+
+	#repository section {
+		font-size: 10px;
+	}
+
+	#repository .overlay > * {
+		font-size: 200%;
+	}
+
+	#repository p, h6 {
+		text-align: left;
+	}
+
+	#contact textarea {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 570px) {
+
+	#home nav {
+		width: inherit;
+	}
+	
+	#about .signature {
+		float: none;
+	}
+
+	#repository h2 {
+		margin-bottom: 0;
+	}
+
+	#repository section img {
+		display: none;
+	}
+
+	#repository section {
+		width: 100%;
+	}
+
+	#repository .description > *  {
+		display: block;
+	}
+
+	#repository .description {
+		display: table-footer-group;
+	}
+
+	#repository .heading {
+		display: table-header-group;
+		font-size: 180%;
+		text-align: left;
+	}
+
+	#repository .overlay {
+		min-height: auto;
+		padding: 20px;
+	}
+
+	#repository .description {
+		top: 100px;
+		position: static;
+	}
+
+	#repository section {
+		min-height: auto;
+	}
+
+	#repository section:hover .overlay .heading {
+	 position: relative;
+	 top: -0px;
+	 color: white;
+	 -webkit-transition: none;
+	}
+
+	#repository .heading span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	
+	.social-links li {
+		display: block;
+		width: 100%;
+	}
+
+	.social-links {
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 300%;
+	}
+
+	#about img {
+		width: 60%;
+	}
+
+	#skill-set #web-development-skills::before {
+		display: none;
+	}
+
+	#skill-set .skills {
+		width: 100%;
+		display: block;
+	}
+
+	#repository .overlay {
+		height: 70%;
+	}
+
+}
